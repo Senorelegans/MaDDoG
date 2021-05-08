@@ -7,7 +7,7 @@ Multi analysis of differential expression of downstream of gene regions (MaDDoG)
 
 1. On a per sample basis reads are binned across the entire genome then grouped by condition taking the average at each window (1. grey). 
 
-2. Dogcatcher is then applied which consists of flattening the annotation to remove overlapping genes, selecting a minimum read depth per gene, and using sliding windows with cutoffs for the end of a gene 
+2. Dogcatcher is then applied which consists of flattening the annotation to remove overlapping genes, selecting a minimum read depth per gene, and using sliding windows with cutofs for the end of a gene 
 
 3. After input regions are obtained, MaDDoG first applies a convolution window to smooth reads (brown), applies multiple Bayesian change point analysis models with Bayesian Information Criteria (BIC) to select a model (green), adds all changepoints from both groups and clusters the points (purple), and finally takes the regions sectioned by change points and applies differential expression analysis (red)
 
@@ -86,11 +86,11 @@ cpus for each step, or swap out trimmers/aligners or add steps so you can design
     
 ## Running
 
-    Run nextflow_RNAseq.sh to run the main.nf ffile
+    Run nextflow_RNAseq.sh to run the main.nf file
     
 ## Output
 
-    In your OUT directory therre will be a mapped folder
+    In your OUT directory there will be a mapped folder
     This will output mapped bams, bedd files, and mosdepth files
     It will also outout library sizes for normalization
 
