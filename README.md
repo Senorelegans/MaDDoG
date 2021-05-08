@@ -44,14 +44,15 @@ Multi analysis of differential expression of downstream of gene regions (MaDDoG)
     Create a conda virtual environment called tfp (for tensor flow probabiliy) with python 3.8
     conda create --name tfp python=3.8
     conda activate tfp
+    
+    For CPU...
     pip3 install tensorflow--cpu==2.4.1
     pip3 install tensorflow_probability==0.12.1
-    pip install -U scikit-learn
-    pip install seaborn
-    pip install numpy
-    pip install pandas
-    conda install -c conda-forge nb_conda_kernels
-    conda install ipykernel
+
+    For GPU...
+    In the Extra scripts folder
+    We have also added the requirements.txt file that will install all of the specific versions needed on a cluster.
+    pip install -r requirements.txt
 
 
 # Part 1. Initial NextFlow for samples (mapping and mosdepth)
