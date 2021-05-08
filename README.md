@@ -41,27 +41,17 @@ Multi analysis of differential expression of downstream of gene regions (MaDDoG)
 
 ## Virtual environment for tensorflow probability
 
-
-
-## Programs (and tested versions) to run MysteryMiner
-
-Programs are imported at the top of each file but listed here for completeness
-
-gcc/7.1.0
-fastqc/0.11.8
-bowtie/2.2.9
-STAR/2.5.2b
-ncbi-blast/2.7.1
-seqkit/0.9.0
-
-SPAdes-3.13.1-Linux
-
-
-### Modules and Programs
-After creating the databases and preparing the files, 1.0_MysteryMiner_Nextflow.sh is the bash script
-that will run the first part of the pipeline.
-
-### Python specific modules
+    Create a conda virtual environment called tfp (for tensor flow probabiliy) with python 3.8
+    conda create --name tfp python=3.8
+    conda activate tfp
+    pip3 install tensorflow--cpu==2.4.1
+    pip3 install tensorflow_probability==0.12.1
+    pip install -U scikit-learn
+    pip install seaborn
+    pip install numpy
+    pip install pandas
+    conda install -c conda-forge nb_conda_kernels
+    conda install ipykernel
 
 
 # Part 1. Initial NextFlow for samples (mapping and mosdepth)
