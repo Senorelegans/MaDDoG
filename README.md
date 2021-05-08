@@ -1,0 +1,2 @@
+# MaDDoG
+Multi analysis of differential expression of downstream of gene regions (MaDDoG), that partitions downstream of gene regions based on changes in read-depth (using a rolling average from a group of samples) with subsequent differential expression analysis of each section (between groups). Importantly, MaDDoG is a tool that can be applied to any area of the genome but is built to primarily classify DoG regions.
